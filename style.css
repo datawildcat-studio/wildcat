@@ -224,3 +224,171 @@ body {
 .policy-agreement a {
     color: var(--teal);
 }
+
+/* Стили для Главной страницы */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--grey);
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e9ecef 100%);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--teal);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.btn-large {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--white);
+}
+
+.accent-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.accent-list li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.accent-list li::before {
+    content: "•";
+    color: var(--red);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    padding: 40px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: var(--teal);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--teal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-link:hover {
+    color: var(--red);
+}
+
+/* Why Us */
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-item {
+    background: #f8f9fa;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: 500;
+    border-left: 4px solid var(--red);
+}
+
+/* Workflow */
+.workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.step {
+    padding: 20px;
+    background: var(--light-grey);
+    border-radius: 8px;
+}
+
+.step span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--teal);
+    opacity: 0.3;
+}
+
+/* Vision Box */
+.vision-box {
+    background: var(--grey);
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.vision-box h2 {
+    color: var(--teal);
+}
+
+/* Final CTA */
+.final-cta {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.final-cta h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
