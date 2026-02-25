@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Wildcat Studio</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <img src="/logo.png" alt="Data Wildcat Studio Logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/ios/">iOS Development</a></li>
+                            <li><a href="/android/">Android Development</a></li>
+                            <li><a href="/publication/">App Store Publication</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contacts/">Contacts</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn-request" id="openModal">Leave a Request</button>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/ios/">iOS Development</a></li>
+                    <li><a href="/android/">Android Development</a></li>
+                    <li><a href="/publication/">App Store Publication</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/contacts/">Contacts</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/policy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacts</h4>
+                <p>Address: Your Physical Address Here</p>
+                <p>Email: <a href="mailto:info@datawildcat.com">info@datawildcat.com</a></p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <hr>
+            <p>DATA WILDCAT SP Z O O</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="requestModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Leave a request</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Company</label>
+                    <input type="text" name="company">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Comment</label>
+                    <textarea name="comment" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+                <p class="policy-agreement">
+                    By clicking "Submit", you agree to the processing of personal data in accordance with the 
+                    <a href="/policy/">privacy policy</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
