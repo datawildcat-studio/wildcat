@@ -528,3 +528,117 @@ body {
 }
 
 
+/* Android Page Specific Styles */
+.android-hero {
+    background: linear-gradient(135deg, #f0f4f5 0%, #ffffff 100%);
+    border-bottom: 4px solid var(--teal);
+}
+
+.tag-android {
+    background: var(--teal);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.android-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.android-card {
+    padding: 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.android-card:hover {
+    border-bottom: 3px solid var(--red);
+    transform: translateY(-10px);
+}
+
+.card-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+.material-design-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-right: 8px solid var(--red);
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.check-list li::before {
+    content: "✓";
+    color: var(--teal);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.pill {
+    background: #eef2f3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.fragmentation-bg {
+    background: var(--grey);
+    color: white;
+}
+
+.info-banner {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-banner h2 { color: var(--teal); margin-bottom: 20px; }
+
+.benefit-flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit-box {
+    flex: 1;
+    min-width: 250px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cta-card-android {
+    background: linear-gradient(45deg, var(--grey), #444);
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cta-card-android h2 { color: var(--teal); }
