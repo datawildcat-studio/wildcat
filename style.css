@@ -392,3 +392,139 @@ body {
     font-size: 2rem;
     margin-bottom: 10px;
 }
+
+/* iOS Page Specific Styles */
+.page-hero.ios-hero {
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1000') center/cover;
+    padding: 120px 0;
+    text-align: left;
+}
+
+.category-tag {
+    color: var(--red);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.ios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.ios-card {
+    background: #fdfdfd;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.ios-card:hover {
+    border-color: var(--teal);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.tech-tags {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tech-tags li {
+    background: var(--light-grey);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.tech-tags li:hover {
+    background: var(--teal);
+    color: white;
+    border-color: var(--teal);
+}
+
+.flex-row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.design-box {
+    background: var(--grey);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    border-left: 8px solid var(--teal);
+}
+
+.process-flow {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.process-step {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.process-step span {
+    display: block;
+    color: var(--red);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.cta-card {
+    background: var(--teal);
+    color: white;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.cta-card h2 { margin-bottom: 20px; }
+.cta-card .btn-large { background: white; color: var(--teal); }
+.cta-card .btn-large:hover { background: var(--red); color: white; }
+
+/* Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
