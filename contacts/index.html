@@ -36,108 +36,60 @@
     </header>
 
 
+<section class="page-hero contacts-hero">
+    <div class="container">
+        <div class="hero-content reveal">
+            <h1>Contacts</h1>
+            <p class="hero-subtitle">Data Wildcat Studio | DATA WILDCAT SP Z O O</p>
+            <p class="hero-description">
+                We are open to collaboration, new projects, and strategic partnerships. 
+                Whether you have a fresh idea, an existing product, or a development request — we are here to help.
+            </p>
+        </div>
+    </div>
+</section>
 
-/* Contacts Page Styles */
-.contacts-hero {
-    background-color: var(--light-grey);
-    text-align: center;
-    padding: 80px 0;
-}
+<section class="section contacts-info-section">
+    <div class="container">
+        <div class="contacts-grid reveal">
+            <div class="details-card">
+                <h2>🏢 Company Details</h2>
+                <div class="info-block">
+                    <label>Full Name</label>
+                    <p><strong>DATA WILDCAT SP Z O O</strong></p>
+                </div>
+                <div class="info-block">
+                    <label>Brand</label>
+                    <p><strong>Data Wildcat Studio</strong></p>
+                </div>
+                <div class="info-block">
+                    <label>Legal Address</label>
+                    <p><strong>Al. Jana Pawła II 43a-37b Warszawa, mazowieckie, 01-001 Poland</strong></p>
+                </div>
+                <div class="info-block">
+                    <label>Email</label>
+                    <p><strong><a href="mailto:support@datawildcatstudio.com" class="contact-email">support@datawildcatstudio.com</a></strong></p>
+                </div>
+            </div>
 
-.contacts-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 40px;
-    align-items: stretch;
-}
+            <div class="cta-box">
+                <div class="cta-inner">
+                    <h2>🚀 Start a Project?</h2>
+                    <p>Click the button below to leave a request. We will get back to you to discuss the details and offer the best solution.</p>
+                    <button class="btn-request btn-large openModalBtn">Leave a Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-.details-card {
-    background: var(--white);
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
-}
-
-.details-card h2 {
-    margin-bottom: 30px;
-    color: var(--grey);
-}
-
-.info-block {
-    margin-bottom: 25px;
-}
-
-.info-block label {
-    display: block;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    color: #999;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-}
-
-.info-block p {
-    font-size: 1.1rem;
-    margin: 0;
-    line-height: 1.5;
-}
-
-.contact-email {
-    color: var(--teal);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.contact-email:hover {
-    color: var(--red);
-}
-
-.cta-box {
-    background: var(--grey);
-    color: white;
-    padding: 50px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.cta-inner h2 {
-    color: var(--teal);
-    margin-bottom: 20px;
-}
-
-.cta-inner p {
-    margin-bottom: 30px;
-    color: #ccc;
-    line-height: 1.6;
-}
-
-/* Map/Visual Placeholder */
-.map-placeholder {
-    height: 200px;
-    background: #f0f0f0;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px dashed #ccc;
-    color: #777;
-    font-weight: 500;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .contacts-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .details-card, .cta-box {
-        padding: 30px;
-    }
-}
-
+<section class="section map-section reveal">
+    <div class="container">
+        <div class="map-placeholder">
+            <p>📍 Our office is located in the heart of Warsaw, Poland</p>
+        </div>
+    </div>
+</section>
 
 
     <footer class="site-footer">
