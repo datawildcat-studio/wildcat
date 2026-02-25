@@ -36,3 +36,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// Функция для анимации появления элементов
+const revealOnScroll = () => {
+    const reveals = document.querySelectorAll('.reveal');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    reveals.forEach(reveal => observer.observe(reveal));
+};
+
+// Запускаем функцию после загрузки документа
+document.addEventListener('DOMContentLoaded', () => {
+    revealOnScroll();
+    
+    // ... ваш предыдущий код для модального окна ...
+});
