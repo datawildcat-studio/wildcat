@@ -839,7 +839,7 @@ body {
     margin: 0;
 }
 
-/* Philosophy Section */
+
 .philosophy-box {
     background: #fdfdfd;
     padding: 60px;
@@ -1007,4 +1007,105 @@ body {
 @media (max-width: 768px) {
     .mission-grid { grid-template-columns: 1fr; }
     .mission-quote { font-size: 1.4rem; margin-top: 30px; }
+}
+
+
+.contacts-hero {
+    background-color: var(--light-grey);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.details-card {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.details-card h2 {
+    margin-bottom: 30px;
+    color: var(--grey);
+}
+
+.info-block {
+    margin-bottom: 25px;
+}
+
+.info-block label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #999;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.info-block p {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.contact-email {
+    color: var(--teal);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-email:hover {
+    color: var(--red);
+}
+
+.cta-box {
+    background: var(--grey);
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-inner h2 {
+    color: var(--teal);
+    margin-bottom: 20px;
+}
+
+.cta-inner p {
+    margin-bottom: 30px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+
+.map-placeholder {
+    height: 200px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #ccc;
+    color: #777;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .details-card, .cta-box {
+        padding: 30px;
+    }
 }
